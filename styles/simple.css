@@ -6,7 +6,7 @@ html, body {
 }
 
 body, td, th, input, textarea, select, a {
-  font-size: 1em; 
+  font-size: 1em;
 }
 
 h1, h2, h3, h4 {
@@ -93,7 +93,7 @@ header {
   min-width: 988px;
   margin-bottom: 30px;
   position: relative;
-  background: #8690A7;
+  background: #666E7F;
   /*background: url(../images/bg-menu3.jpg) top left repeat-x;*/
   z-index: 20;
 }
@@ -222,3 +222,25 @@ ul .main-nav li ul li a {
 
 
 
+/*********************************************************************************/
+/*********************************** CONTENIDO *******************************/
+/*********************************************************************************/
+
+.content {
+  height: 300px;
+  padding: 50px;
+}
+
+.photo {
+  height: 100px;
+}
+
+.a_left {
+  width: 333px;
+  float: left;
+}
+
+.a_right {
+  width: 666px;
+  float: left;
+}
