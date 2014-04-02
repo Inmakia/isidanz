@@ -91,7 +91,6 @@ header {
   width: 100%;
   height: 100px;
   min-width: 988px;
-  margin-bottom: 30px;
   position: relative;
   background: #666E7F;
   /*background: url(../images/bg-menu3.jpg) top left repeat-x;*/
@@ -109,15 +108,16 @@ nav {
 
 .logo {
   width: 217px;
-  height: 100px;
+  height: 90px;
   float: left;
-  margin: 0;
+  margin: 5px auto;
 }
 
 .logo a {
   display: block;
   width: 217px;
-  height: 100px;
+  height: 90px;
+  background: transparent url(../images/logo.png) no-repeat 0 0;
 }
 
 #main-logo {
@@ -232,7 +232,10 @@ ul .main-nav li ul li a {
 }
 
 .photo {
-  height: 100px;
+  height: 200px;
+  margin: 0 auto;
+  width: 988px;
+  background: transparent url(../images/Cabeceras/1.Inicio.png) no-repeat 0 0;
 }
 
 .a_left {
