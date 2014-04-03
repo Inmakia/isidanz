@@ -1,0 +1,14 @@
+html, body {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: none;
+}
+
+.photo {
+  height: 200px;
+  margin: 0 auto;
+  width: 988px;
+  background: transparent url(../images/Cabeceras/1.Inicio.png) no-repeat 0 0;
+}
