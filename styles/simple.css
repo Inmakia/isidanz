@@ -1,5 +1,10 @@
+@font-face {
+  font-family: "Corbel";
+  src : url(fonts/corbel.ttf);
+}
+
 html, body {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-family: "Corbel", Verdana, Arial, Helvetica, sans-serif;
   font-size: 100%;
   padding: 0;
   margin: 0;
@@ -101,7 +106,7 @@ header nav {
   position: relative;
 }
 
-nav {
+nav, .content {
   margin: 0 auto;
   width: 988px;
 }
@@ -227,8 +232,8 @@ ul .main-nav li ul li a {
 /*********************************************************************************/
 
 .content {
-  height: 300px;
-  padding: 50px;
+  height: 250px;
+  padding: 25px 50px;
 }
 
 .photo {
@@ -253,4 +258,10 @@ ul .main-nav li ul li a {
   text-align: justify;
   margin-bottom: 15px;
   color: white;
+}
+
+footer {
+  background: #666E7F;
+  color: white;
+  padding: 15px;
 }
