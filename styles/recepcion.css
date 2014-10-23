@@ -1,0 +1,304 @@
+@font-face {
+  font-family: "Corbel";
+  src : url("fonts/corbel.ttf");
+}
+
+html {
+  font-family: "Corbel", Verdana, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+h1, h2, h3, h4 {
+  /*Fuente título*/
+  color: #789CA7;
+  font-weight: 300;
+  margin: 0 0 20px 0;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 21px;
+  margin: 0 0 15px 0;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+#content {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  font-size: 0.8em;
+  background: #242D4E;
+}
+
+.clear {
+  clear: both;
+  font-size: 0;
+  line-height: 0;
+  height: 0;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+a, a:visited {
+  background: transparent;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+a:active,
+a:hover {
+  outline: 0;
+  text-decoration: none;
+  color: #B2B2B2;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+
+mark {
+  color: #000;
+  background: #ff0;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+sup {
+  top: -.5em;
+}
+sub {
+  bottom: -.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  height: 0;
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+  font: inherit;
+  color: inherit;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  padding: 0 0 1px;
+  background: #666E7F;
+  z-index: 100;
+}
+
+.logo {
+  width: 217px;
+  height: 90px;
+  margin: 5px auto;
+}
+
+.logo a {
+  display: block;
+  width: 217px;
+  height: 90px;
+  background: transparent url(../images/logo.png) no-repeat 0 0;
+}
+
+#main-logo {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+}
+
+ul.main-nav {
+  margin: 22px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+ul.main-nav li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+ul.main-nav li ul.children {
+  display: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  position: absolute;
+  top: 45px;
+  left: 7px;
+  width: 150px;
+  -webkit-border-radius: 5px 5px 5px 5px;
+  -moz-border-radius: 5px 5px 5px 5px;
+  -khtml-border-radius: 5px 5px 5px 5px;
+  border-radius: 5px 5px 5px 5px;
+}
+
+ul.main-nav li ul li {
+  padding: 0;
+  margin: 0;
+  display: block;
+  float: left;
+}
+
+ul.main-nav li a{
+  color:#f5f5f5;
+  font-size:13px;
+  font-weight:bold;
+  padding:25px;
+  text-decoration:none;
+  display:block;
+}
+ul.main-nav li a b {
+  color:#D06464;
+  font-weight:bold;
+}
+ul.main-nav li a:hover, ul.main_menu li a.active{
+  color:#d06464;
+}
+
+.nav-left {
+  float: left;
+  width: 385px;
+  text-align: left;
+  display: block;
+  position: relative;
+  z-index: 399;
+}
+
+.nav-left li {
+  float: right;
+}
+
+ul .main-nav li ul li a {
+  color:#f5f5f5;
+  font-size:12px;
+  font-weight:bold;
+  padding:8px;
+  text-decoration:none;
+  display:block;
+  width:134px;
+}
+
+.nav-right {
+  float: left;
+  width: 385px;
+  text-align: right;
+  display: block;
+  position: relative;
+  z-index: 400;
+}
+
+.nav-right li {
+  float: left;
+}
+
