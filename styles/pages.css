@@ -1,0 +1,14 @@
+.photo {
+	height: 200px;
+	width: 988px;
+	margin: 0px auto;
+	background: transparent url(../images/Cabeceras/1.Inicio.png) no-repeat;
+	position: relative;
+	top: 100px;
+}
+
+.content {
+	height: 250px;
+	padding: 25px 50px;
+	position: relative;
+}

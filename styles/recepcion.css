@@ -10,9 +10,10 @@ html {
       -ms-text-size-adjust: 100%;
 }
 body {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   font-size: 1em;
+  background-color: #242D4E;
 
 }
 article,
@@ -41,7 +42,7 @@ h1, h2, h3, h4 {
   /*Fuente título*/
   color: #789CA7;
   font-weight: 300;
-  margin: 0 0 20px 0;
+  margin: 0px 0px 20px 0px;
 }
 
 h1 {
@@ -58,18 +59,18 @@ h3 {
 
 h4 {
   font-size: 21px;
-  margin: 0 0 15px 0;
+  margin: 0px 0px 15px 0px;
 }
 
 h5 {
   font-size: 16px;
   font-weight: bold;
-  margin: 0 0 10px 0;
+  margin: 0px 0px 10px 0px;
 }
 
-#content {
+#wrapper {
   width: 100%;
-  margin: 0 auto;
+  margin: 0px auto;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -79,14 +80,14 @@ h5 {
 
 .clear {
   clear: both;
-  font-size: 0;
-  line-height: 0;
-  height: 0;
+  font-size: 0px;
+  line-height: 0px;
+  height: 0px;
 }
 
 audio:not([controls]) {
   display: none;
-  height: 0;
+  height: 0px;
 }
 
 [hidden],
@@ -101,19 +102,23 @@ a, a:visited {
   color: #FFFFFF;
   cursor: pointer;
 }
+
 a:active,
 a:hover {
-  outline: 0;
+  outline: 0px;
   text-decoration: none;
   color: #B2B2B2;
 }
+
 abbr[title] {
   border-bottom: 1px dotted;
 }
+
 b,
 strong {
   font-weight: bold;
 }
+
 dfn {
   font-style: italic;
 }
@@ -122,9 +127,11 @@ mark {
   color: #000;
   background: #ff0;
 }
+
 small {
   font-size: 80%;
 }
+
 sub,
 sup {
   position: relative;
@@ -132,6 +139,7 @@ sup {
   line-height: 0;
   vertical-align: baseline;
 }
+
 sup {
   top: -.5em;
 }
@@ -139,7 +147,7 @@ sub {
   bottom: -.25em;
 }
 img {
-  border: 0;
+  border: 0px;
 }
 svg:not(:root) {
   overflow: hidden;
@@ -148,7 +156,7 @@ figure {
   margin: 1em 40px;
 }
 hr {
-  height: 0;
+  height: 0px;
   -webkit-box-sizing: content-box;
      -moz-box-sizing: content-box;
           box-sizing: content-box;
@@ -168,7 +176,7 @@ input,
 optgroup,
 select,
 textarea {
-  margin: 0;
+  margin: 0px;
   font: inherit;
   color: inherit;
 }
@@ -184,15 +192,21 @@ header {
   position: fixed;
   width: 100%;
   height: 100px;
-  padding: 0 0 1px;
+  padding: 0px 0px 1px;
   background: #666E7F;
   z-index: 100;
+}
+
+nav, .content {
+  margin: 0px auto;
+  width: 988px;
 }
 
 .logo {
   width: 217px;
   height: 90px;
   margin: 5px auto;
+  float: left;
 }
 
 .logo a {
@@ -203,8 +217,8 @@ header {
 }
 
 #main-logo {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
 }
 
 ul {
@@ -216,36 +230,21 @@ ul {
 }
 
 ul.main-nav {
-  margin: 22px 0 0 0;
-  padding: 0;
+  margin: 22px 0px 0px 0px;
+  padding: 0px;
   list-style: none;
 }
 
 ul.main-nav li {
-  margin: 0;
-  padding: 0;
+  margin: 0px;
+  padding: 0px;
   list-style: none;
   position: relative;
 }
 
-ul.main-nav li ul.children {
-  display: none;
-  margin: 0;
-  padding: 0;
-  background-color: #333;
-  position: absolute;
-  top: 45px;
-  left: 7px;
-  width: 150px;
-  -webkit-border-radius: 5px 5px 5px 5px;
-  -moz-border-radius: 5px 5px 5px 5px;
-  -khtml-border-radius: 5px 5px 5px 5px;
-  border-radius: 5px 5px 5px 5px;
-}
-
 ul.main-nav li ul li {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   display: block;
   float: left;
 }
@@ -262,14 +261,14 @@ ul.main-nav li a b {
   color:#D06464;
   font-weight:bold;
 }
-ul.main-nav li a:hover, ul.main_menu li a.active{
+ul.main-nav li a:hover, ul.main_menu li a.active, footer a:hover, footer a:active{
   color:#d06464;
 }
 
 .nav-left {
   float: left;
   width: 385px;
-  text-align: left;
+  text-align: right;
   display: block;
   position: relative;
   z-index: 399;
@@ -300,5 +299,16 @@ ul .main-nav li ul li a {
 
 .nav-right li {
   float: left;
+}
+
+footer {
+  position: fixed;
+  background: #666E7F;
+  color: white;
+  bottom: 0px;
+  left: 0px;
+  height: 35px;
+  width: 100%;
+  padding: 15px;
 }
 
