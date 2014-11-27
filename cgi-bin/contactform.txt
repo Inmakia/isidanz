@@ -1,0 +1,6 @@
+From: [required-email]
+To: inmakia@gmail.com
+Subject: Formulario web Isidanz
+
+Nombre: [required-nombre]
+Mensaje: [required-mensaje]

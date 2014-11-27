@@ -1,221 +1,333 @@
-body {
-font-family: arial, sans-serif;
-font-size: 100%; /* best for all browser using em */
-padding:0; 
-margin:0;
+@font-face {
+  font-family: "Corbel";
+  src : url("fonts/corbel.ttf");
 }
 
-*, html { line-height: 1.6em; }
+html {
+  font-family: "Corbel", Verdana, Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 1em;
+  background-color: #242D4E;
 
-article img { width:auto; max-width:100%; height:auto; }
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
 
-.sidebar a, article a, header a, footer a { color: #5F2170; }
-header a { text-decoration: none; }
+h1, h2, h3, h4 {
+  /*Fuente título*/
+  color: #789CA7;
+  font-weight: 300;
+  margin: 0px 0px 20px 0px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+h4 {
+  font-size: 21px;
+  margin: 0px 0px 15px 0px;
+}
+
+h5 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0px 0px 10px 0px;
+}
 
 #wrapper {
-font-size: 0.8em; /* 13px from 100% global font-size */
-min-width: 960px; /* standard 1024px wide */
-margin: 0 auto;
+  width: 100%;
+  margin: 0px auto;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  font-size: 0.8em;
+  background: #242D4E;
 }
 
-/* css for <header> */
-header {
+.clear {
+  clear: both;
+  font-size: 0px;
+  line-height: 0px;
+  height: 0px;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0px;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+a, a:visited {
+  background: transparent;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+a:active,
+a:hover {
+  outline: 0px;
+  text-decoration: none;
+  color: #B2B2B2;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  color: #000;
+  background: #ff0;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+sub {
+  bottom: -.25em;
+}
+img {
+  border: 0px;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  height: 0px;
+  -webkit-box-sizing: content-box;
+     -moz-box-sizing: content-box;
+          box-sizing: content-box;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
   margin: 0px;
-  float: left;
-  height: 150px;
-  width: 100%;
+  font: inherit;
+  color: inherit;
 }
-header hgroup { width: 100%; font-weight:normal; }
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
 
-#main-logo {
-  background: transparent url(../images/main-logo.jpg) no-repeat 0 0;
-  border-width:0  1px 0 0;
-  display: inline-block;
-  text-indent:-9999px;
-  float: left;
-  line-height:0;
-  margin: 0;
-  text-decoration:none;
-  height: 150px;
+header {
+  position: fixed;
   width: 100%;
+  height: 100px;
+  padding: 0px 0px 1px;
+  background: #666E7F;
+  z-index: 100;
+}
+
+nav, .content {
+  margin: 0px auto;
+  width: 988px;
 }
 
 .logo {
-
+  width: 217px;
+  height: 90px;
+  margin: 5px auto;
+  float: left;
 }
 
-/* css for <nav> */
-nav {
-  display: inline;
-  margin: 0 0 2em;
+.logo a {
+  display: block;
+  width: 217px;
+  height: 90px;
+  background: transparent url(../images/logo.png) no-repeat 0 0;
+}
+
+#main-logo {
+  margin: 0px;
   padding: 0px;
-  height: 150px;
-  width: 100%;
-  background-color: #181919;
 }
-nav ul ul {display: none;}
-nav ul li:hover > ul {display: block;}
-  
-nav ul {
-  padding: 0;
+
+ul {
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
+}
+
+ul.main-nav {
+  margin: 22px 0px 0px 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+ul.main-nav li {
+  margin: 0px;
+  padding: 0px;
   list-style: none;
   position: relative;
-  display: inline-table;
-  z-index: 9999;
-  margin: 0px;
-  float: left;
-  width: 100%;
 }
-nav ul:after {content: ""; clear: both; display: block;}
 
-nav ul li {float: left;}
-
-nav ul li:hover a {color: #fff;}
-
-nav ul li a {
+ul.main-nav li ul li {
+  padding: 0px;
+  margin: 0px;
   display: block;
-  padding: 1em;
-  font-size: 1.125em;
-  color: #ccc;
-  text-decoration: none;
-  margin: 0px;
-  background-color: #000;
-  border-right: 1px solid #333;
-}
-nav ul li:last-of-type a {border-right: 1px solid transparent !important;}
-
-nav ul ul {
-  background: #5f6975;
-  border-radius: 0px;
-  padding: 0;
-  position: absolute;
-  top: 100%;
-  width: auto;
-  float: none;
-}
-nav ul li:hover {
-  background: #5f6975;
-  color: #FFF;
-}
-nav ul ul li a:hover {
-  background-color: #4b545f;
-}
-
-nav ul ul li {
-float: none;
-border-bottom: 1px solid #444240;
-position: relative;
-}
-
-nav ul ul li a {
-padding: 0.5em 1em;
-font-size: 1em;
-width:10em;
-color: #fff;
-} 
-
-nav ul ul ul {
-position: absolute; left: 100%; top:0;
-}
-
-.main-nav {
-  width: 100%;
-  height: 150px;
-  text-align: center;
-}
-
-.left {
   float: left;
 }
 
-.right {
+ul.main-nav li a{
+  color:#f5f5f5;
+  font-size:13px;
+  font-weight:bold;
+  padding:25px;
+  text-decoration:none;
+  display:block;
+}
+ul.main-nav li a b {
+  color:#D06464;
+  font-weight:bold;
+}
+ul.main-nav li a:hover, ul.main_menu li a.active, footer a:hover, footer a:active{
+  color:#d06464;
+}
+
+.nav-left {
+  float: left;
+  width: 385px;
+  text-align: right;
+  display: block;
+  position: relative;
+  z-index: 399;
+}
+
+.nav-left li {
   float: right;
 }
 
-.menu-list {
-  width: 120px;
+ul .main-nav li ul li a {
+  color:#f5f5f5;
+  font-size:12px;
+  font-weight:bold;
+  padding:8px;
+  text-decoration:none;
+  display:block;
+  width:134px;
 }
 
-/* css for <section class='content'> */
-section.content { width: 90%; float:left; min-height: 300px; }
-.content article { width:100%; float:left; padding: 0 0 1em; margin: 0 0 1em; border-bottom: 1px solid #ddd; }
-article .entry { clear:both; padding: 0 0 1em; }
-article { min-height: 300px;}
-h1.post-title { font-size: 1.8em; margin:0; padding:0;}
-.entry.post-meta { color: #888; }
-.entry.post-meta span { padding: 0 1em 0 0; }
-.entry.post-content { font-size: 1.125em; margin:0; padding:0;}
-
-/* css for <aside class='sidebar'> */
-aside.sidebar { width: 25%; float:right; }
-aside.sidebar ul {
-  width:100%;
-  margin: 0px;
-  padding: 0px;
+.nav-right {
   float: left;
-  list-style: none;
-}
-aside.sidebar ul li {
-  width:100%;
-  margin: 0px 0px 2em;
-  padding: 0px;
-  float: left;
-  list-style: none;
-}
-aside.sidebar ul li ul li {
-  margin: 0px 0px 0.2em;
-  padding: 0px;
-}
-aside.sidebar ul li ul li ul li {
-  margin: 0px;
-  padding: 0px 0px 0px 1em;
-  width: 90%;
-  font-size: 0.9em;
-}
-aside.sidebar ul li h3.widget-title {
-  width:100%;
-  margin: 0px;
-  padding: 0px;
-  float: left;
-    font-size: 1.45em;
+  width: 385px;
+  text-align: right;
+  display: block;
+  position: relative;
+  z-index: 400;
 }
 
-/* css for <footer> */
+.nav-right li {
+  float: left;
+}
+
 footer {
-  width: 98%;
-  float:left;
-  padding: 1%;
-  background-color: white;
-  margin-top: 2em;
-}
-footer .footer-left { width: 45%; float:left; text-align:left; }
-footer .footer-right { width: 45%; float:right; text-align:right; }
-
-
-/* ipad 768px */
-@media only screen and (min-width:470px) and (max-width:770px){
-body { background-color: red; } /*lets add some background color so we know which dimension we're in */
-#wrapper { width:96%; font-size: 0.6875em; }
-section.content, aside.sidebar { width:100%; }
+  position: fixed;
+  background: #666E7F;
+  color: white;
+  bottom: 0px;
+  left: 0px;
+  height: 35px;
+  width: 100%;
+  padding: 15px;
 }
 
-/* iphone 468px */
-@media only screen and (min-width:270px) and (max-width:470px){
-body { background-color: yellow; } /*lets add some background color so we know which dimension we're in */
-#wrapper { width:96%; font-size: 0.6875em; }
-section.content, aside.sidebar { width:100%; }
+.fline {
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
+#aviso {
+  color: #242D4E;
+  font-weight: bolder;
+}
 
-
-/* ------------------------- CONSTRUCCIÓN PROVISIONAL ----------------------*/
+#aviso:hover {
+  color: white;
+  text-decoration: underline;
+}
 
 .construction {
-  margin: 0 auto;
-  padding: 65px;
-}
-
-.contact {
-  position: relative;
-  bottom: -20px;
+  color:#d06464;
 }

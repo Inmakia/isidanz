@@ -11,4 +11,87 @@
 	height: 250px;
 	padding: 25px 50px;
 	position: relative;
+	top: 100px;
+}
+
+.post .text {
+	font-size: 16px;
+	text-align: left;
+	margin-bottom: 15px;
+	color: white; 
+}
+
+.contact {
+	border: 2px solid #666E7F;
+	border-radius: 15px;
+	padding: 15px;
+	margin: 50px;
+	margin-right: 15px;
+	margin-top: 5px;
+	float: left;
+}
+
+#mail {
+	margin-left: 15px;
+}
+
+#rrss {
+	width: 300px;
+}
+
+table, tr, td {
+	width: 100%;
+	margin: 0px;
+}
+
+.tdl {
+	width: 20%;
+	text-align: right;
+	color: white;
+	font-size: 1.2em;
+}
+
+.tdr {
+	width: 75%;
+	text-align: left;
+	padding-left: 20px;
+	padding: 10px;
+	font-size: 1.2em;
+	color: white;
+	text-decoration: none;
+	font-weight: 400;
+}
+
+.cont_icon {
+	width: 50px;
+	padding: 5px;
+}
+
+.pre {
+	padding-right: 15px;
+}
+
+#tlf {
+	width: 60px;
+	padding: 0px;
+}
+
+input, textarea {
+	width: 300px;
+	border-radius: 15px;
+	border: solid 1px #A4A4A4;
+	padding: 3px;
+	padding-left: 7px;
+	color: black;
+}
+
+button {
+	width: 80%;
+	border: none;
+	border-radius: 15px;
+	background-color: #666E7F;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	padding: 3px;
 }
